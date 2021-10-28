@@ -1,7 +1,7 @@
 .container {
     /* Size and Color */
     height: 64px;
-    width: 100vw;
+    /* width: 100vw; */
 
     /* Positioning and Alignment */
     display: flex;
@@ -12,7 +12,7 @@
 
 @media (min-width: 800px) {
     .container {
-        max-width: 40vw;
+        /* max-width: 40vw; */
         align-self: center;
     }
 }
