@@ -1,11 +1,42 @@
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import ImageCard from '../public/img/image_card.png'
 
 const Meta = () => {
     return (
-        <div>
-            {/* TODO: NEXT-SEO https://github.com/garmeeh/next-seo#add-seo-to-page */}
-        </div>
+        <>
+            <NextSeo
+                title="Nabil Omi"
+                description="I'm a Computer Science Student at CCNY."
+                openGraph={{
+                    url: "https://www.nabilto.com/",
+                    title: "Nabil Omi",
+                    description: "I'm a Computer Science Student a CCNY.",
+                    images: [
+                        {
+                            url: "https://i.imgur.com/mvoqOLw.png",
+                            width: 1200,
+                            height: 630,
+                            alt: "Nabil, Github Logo, LinkedIn Logo"
+                        }
+                    ],
+                    type: "profile",
+                    profile: {
+                        firstName: "Nabil",
+                        lastName: "Omi",
+                        username: "Nabil",
+                        gender: "male"
+                    },
+                    
+                }}
+                additionalMetaTags={[{
+                    name: "theme-color",
+                    content: "#323232"
+                }, {
+                    name: "keywords",
+                    content: "nabil, omi, nabil omi, omi nabil"
+                }]}
+            />
+        </>
     )
 }
 
