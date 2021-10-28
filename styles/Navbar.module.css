@@ -1,0 +1,44 @@
+.container {
+    /* Size and Color */
+    height: 64px;
+    width: 100vw;
+
+    /* Positioning and Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 40vw;
+        align-self: center;
+    }
+}
+
+.navbar {
+    /* Size and Color */
+    width: 80vw;
+
+    /* Positioning and Alignment */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #e6e6e6;
+    align-self: center;
+}
+
+.listContainer {
+    display: flex;
+    align-items: center;
+}
+
+.list {
+    padding: 1rem;
+    list-style: none;
+}
