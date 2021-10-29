@@ -17,7 +17,6 @@ const Header = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.listContainer}>
-                {/* TODO: Make icons show name on click and hover. Possibly draggable? */}
                 {SVGARR && SVGARR.map(lang => <IconSVG src={lang} key={`${lang}`} />)}
             </ul>
             <hr className={styles.underline} />
