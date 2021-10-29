@@ -1,4 +1,7 @@
 import ThisSite from '../public/img/image_card.png'
+import Cifar from '../public/img/Cifar.png'
+import Manga from '../public/img/Manga.png'
+import Spurwing from '../public/img/Spurwing.png'
 
 export type Project = {
     src: string,
@@ -22,7 +25,7 @@ const sample: Project = {
 }
 
 const awoogadex: Project = {
-    src: ThisSite.src,
+    src: Manga.src,
     title: "Manga Reader",
     desc: "Website to browse manga with MangaDex API.",
     longDesc: "Website for browsing manga and webcomics made using \
@@ -31,7 +34,7 @@ const awoogadex: Project = {
 }
 
 const cifar10: Project = {
-    src: ThisSite.src,
+    src: Cifar.src,
     title: "CIFAR-10 Classifier",
     desc: "ConvNet to classify images. Made with PyTorch.",
     longDesc: "Convolutional Neural Network made to classify 10 classes of \
@@ -40,7 +43,7 @@ const cifar10: Project = {
 }
 
 const slackbot: Project = {
-    src: ThisSite.src,
+    src: Spurwing.src,
     title: "Spurwing Slack Bot",
     desc: "RTC bot used for managing appointments.",
     longDesc: "RTC Slack bot made using the Slack API and Spurwing \
