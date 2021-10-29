@@ -1,5 +1,6 @@
 import styles from '../styles/Header.module.css'
 import Image from 'next/image'
+import type { ImageProps } from 'next/image'
 import { motion } from 'framer-motion'
 
 // SVG Files
@@ -12,118 +13,37 @@ import SQL from '../public/svg/sql.svg'
 import TS from '../public/svg/ts.svg'
 
 const Header = () => {
+    const SVGARR = [TS, JS, CPP, PYTHON, HTML, CSS, SQL];
     return (
         <div className={styles.container}>
             <ul className={styles.listContainer}>
                 {/* TODO: Make icons show name on click and hover. Possibly draggable? */}
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={TS} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={JS} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={HTML} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={CSS} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={PYTHON} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={CPP} />
-                    </div>
-                </motion.div>
-                <motion.div 
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.95 }}
-                    drag
-                    dragConstraints={{
-                        top: -100,
-                        bottom: 50,
-                        left: -200,
-                        right: 200
-                    }}
-                    className={styles.list}>
-                    <div className={styles.noSelect}> 
-                        <Image src={SQL} />
-                    </div>
-                </motion.div>
+                {SVGARR && SVGARR.map(lang => <IconSVG src={lang} key={`${lang}`} />)}
             </ul>
             <hr className={styles.underline} />
         </div>
+    )
+}
+
+const IconSVG = ({ src }: ImageProps) => {
+    return (
+        <motion.div 
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            drag
+            dragConstraints={{
+                top: -10,
+                bottom: 10,
+                left: -10,
+                right: 10
+            }}
+            dragElastic={1}
+            dragTransition={{ bounceStiffness: 100 }}
+            className={styles.list}>
+            <div className={styles.noSelect}> 
+                <Image className={styles.color} src={src} />
+            </div>
+        </motion.div>
     )
 }
 

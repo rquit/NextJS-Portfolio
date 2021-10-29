@@ -13,7 +13,7 @@ const Meta = () => {
                     description: "I'm a Computer Science Student a CCNY.",
                     images: [
                         {
-                            url: "https://i.imgur.com/mvoqOLw.png",
+                            url: ImageCard.src,
                             width: 1200,
                             height: 630,
                             alt: "Nabil, Github Logo, LinkedIn Logo"
