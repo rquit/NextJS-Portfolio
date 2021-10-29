@@ -16,6 +16,7 @@
     margin: 0;
     margin-top: 2rem;
     align-items: flex-start;
+    justify-content: space-around;
 }
 
 .list {
@@ -23,6 +24,9 @@
     margin: 0.2rem;
     list-style: none;
     z-index: 9;
+
+    /* Styling */
+    cursor: grab;
 }
 
 .underline {
