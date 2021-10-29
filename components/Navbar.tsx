@@ -15,7 +15,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li className={styles.list}>
-                        <a href='https://github.com/rquit' target='_blank' rel='noreferrer'>
+                        <a href='https://www.linkedin.com/in/nabil-omi/' target='_blank' rel='noreferrer'>
                             <Image src={LinkedIn} height={32} width={32} />
                         </a>
                     </li>
