@@ -1,5 +1,7 @@
 import styles from '../styles/Navbar.module.css'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
+import type { ImageProps } from 'next/image'
 import GitHub from '../public/svg/github.svg'
 import LinkedIn from '../public/svg/linkedin.svg'
 
@@ -9,19 +11,30 @@ const Navbar = () => {
             <div className={styles.navbar} >
                 <h2 className={styles.title}>Nabil Omi</h2>
                 <ul className={styles.listContainer}>
-                    <li className={styles.list}>
-                        <a href='https://github.com/rquit' target='_blank' rel='noreferrer'>
-                            <Image src={GitHub} height={32} width={32} />
-                        </a>
-                    </li>
-                    <li className={styles.list}>
-                        <a href='https://www.linkedin.com/in/nabil-omi/' target='_blank' rel='noreferrer'>
-                            <Image src={LinkedIn} height={32} width={32} />
-                        </a>
-                    </li>
+                    <NavButton src={GitHub} link="https://github.com/rquit" />
+                    <NavButton src={LinkedIn} link="https://www.linkedin.com/in/nabil-omi/" />
                 </ul>
             </div>
         </div>
+    )
+}
+
+type NavbarButton = {
+    src: ImageProps,
+    link: string
+}
+
+const NavButton = ({ src, link }: NavbarButton) => {
+    return (
+        <motion.li 
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className={styles.list}
+        >
+            <a href={link} target='_blank' rel='noreferrer'>
+                <Image src={src.src} height={32} width={32} />
+            </a>
+        </motion.li>
     )
 }
 
