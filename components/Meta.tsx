@@ -10,7 +10,7 @@ const Meta = () => {
                 openGraph={{
                     url: "https://www.nabilto.com/",
                     title: "Nabil Omi",
-                    description: "I'm a Computer Science Student a CCNY.",
+                    description: "I'm a Computer Science Student at CCNY.",
                     images: [
                         {
                             url: ImageCard.src,
