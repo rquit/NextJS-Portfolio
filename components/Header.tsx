@@ -30,13 +30,8 @@ const IconSVG = ({ src }: ImageProps) => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
             drag
-            dragConstraints={{
-                top: -10,
-                bottom: 10,
-                left: -10,
-                right: 10
-            }}
-            dragElastic={1}
+            dragElastic={0.2}
+            dragMomentum={false}
             dragTransition={{ bounceStiffness: 100 }}
             className={styles.list}>
             <div className={styles.noSelect}> 
