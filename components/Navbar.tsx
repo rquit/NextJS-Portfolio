@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import type { ImageProps } from 'next/image'
 import GitHub from '../public/svg/github.svg'
 import LinkedIn from '../public/svg/linkedin.svg'
+import Mail from '../public/svg/Mail.svg'
 
 const Navbar = () => {
     return (
@@ -12,6 +13,7 @@ const Navbar = () => {
                 <h2 className={styles.title}>Nabil Omi</h2>
                 <ul className={styles.listContainer}>
                     <NavButton src={GitHub} link="https://github.com/rquit" />
+                    <NavButton src={Mail} link="mailto:nabilomi@acm.org"  />
                     <NavButton src={LinkedIn} link="https://www.linkedin.com/in/nabil-omi/" />
                 </ul>
             </div>
@@ -31,7 +33,7 @@ const NavButton = ({ src, link }: NavbarButton) => {
             whileTap={{ scale: 0.9 }}
             className={styles.list}
         >
-            <a href={link} target='_blank' rel='noreferrer'>
+            <a href={link} target='_blank' rel='noreferrer noopener'>
                 <Image src={src.src} height={32} width={32} />
             </a>
         </motion.li>
