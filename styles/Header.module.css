@@ -1,6 +1,6 @@
 .container {
     /* Size and Color */
-    width: 80vw;
+    width: 90vw;
 
     /* Positioning and Alignment */
     display: flex;
@@ -32,7 +32,7 @@
 .underline {
     background-color: #F7D763;
     height: 5px;
-    width: 80vw;
+    width: 90vw;
 }
 
 .noSelect {
