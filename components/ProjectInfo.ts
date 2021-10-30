@@ -8,7 +8,8 @@ export type Project = {
     title: string,
     desc: string,
     longDesc?: string,
-    link: string
+    link: string,
+    deployed?: string
 }
 
 export type ProjectProp = {
@@ -30,7 +31,8 @@ const awoogadex: Project = {
     desc: "Website to browse manga with MangaDex API.",
     longDesc: "Website for browsing manga and webcomics made using \
             ReactJS and Axios for requests. Consumes the MangaDex API.",
-    link: "https://github.com/rquit/AwoogaDex"
+    link: "https://github.com/rquit/AwoogaDex",
+    deployed: "https://manga.nabilto.com/"
 }
 
 const cifar10: Project = {
@@ -57,7 +59,8 @@ const thissite: Project = {
     desc: "Made with NextJS and Framer Motion in TypeScript.",
     longDesc: "This is the website you are on right now. Made using \
             NextJS for content, and Framer Motion for animations.",
-    link: "https://github.com/rquit/NextJS-Portfolio"
+    link: "https://github.com/rquit/NextJS-Portfolio",
+    deployed: "https://www.nabilto.com/"
 }
 
 export {

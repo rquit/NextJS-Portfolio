@@ -29,6 +29,8 @@
     border: 2px solid #e6e6e6;
     border-radius: 5px;
     padding: 1rem;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 .hr {
@@ -37,6 +39,19 @@
 
 .reduceSpace {
     margin: 0;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.deployedLink {
+    border: 2px solid #e6e6e6;
+    padding: .5rem;
+    align-self: center;
+    z-index: 100;
+    border-radius: 5px;
 }
 
 @media (min-width: 700px) {

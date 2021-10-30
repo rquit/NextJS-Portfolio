@@ -31,7 +31,8 @@ const ProjectDiv = ({ project }: ProjectProp) => {
         src, 
         title, 
         desc,
-        link 
+        link,
+        deployed
     } = project;
 
     return (
@@ -40,13 +41,28 @@ const ProjectDiv = ({ project }: ProjectProp) => {
             target={'_blank'}
             rel={'noreferrer'}
             whileHover={{ scale:1.02 }}
-            whileTap={{ scale: 0.98 }}
+            whileTap={{ scale: 1.02 }}
             className={styles.list}
         > 
             <Image src={src} width={800} height={420} />
             <hr className={styles.hr} />
-            <h2 className={styles.reduceSpace}>{title}</h2>
-            <p className={styles.reduceSpace}>{desc}</p>
+            <div className={styles.infoContainer}>
+                <div>
+                    <h2 className={styles.reduceSpace}>{title}</h2>
+                    <p className={styles.reduceSpace}>{desc}</p>
+                </div>
+                {deployed && 
+                <motion.a 
+                    target={'_blank'}
+                    rel={'noreferrer'} 
+                    whileHover={{ scale:1.1 }}
+                    whileTap={{ scale: 0.9 }} 
+                    href={deployed} 
+                    className={styles.deployedLink}
+                >
+                    Site
+                </motion.a>}
+            </div>
         </motion.a>
     )
 }
