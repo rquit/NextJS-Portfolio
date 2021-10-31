@@ -19,9 +19,9 @@ const Main = () => {
     ]
     return (
         <div className={styles.container}>
-            <ul className={styles.listContainer}>
-                {projects && projects.map(p => <ProjectDiv key={p.title} project={p} />)}
-            </ul>
+            <div className={styles.listContainer}>
+                {projects && projects.map(p => <ProjectDiv key={`${p.title}`} project={p} />)}
+            </div>
         </div>
     )
 }

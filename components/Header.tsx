@@ -27,11 +27,11 @@ const Header = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.listContainer}>
-                {LANGSVGARR && LANGSVGARR.map(lang => <IconSVG src={lang} key={`${lang}`} />)}
+                {LANGSVGARR && LANGSVGARR.map(lang => <IconSVG src={lang} key={`${lang.src}`} />)}
             </ul>
             <hr className={styles.underline} />
             <ul className={styles.listContainer}>
-                {TECHSVGARR && TECHSVGARR.map(lang => <IconSVG src={lang} key={`${lang}`} />)}
+                {TECHSVGARR && TECHSVGARR.map(tech => <IconSVG src={tech} key={`${tech.src}`} />)}
             </ul>
             <hr className={styles.underline} />
         </div>
