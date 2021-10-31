@@ -34,6 +34,9 @@ const Meta = () => {
                 }, {
                     name: "keywords",
                     content: "nabil, omi, nabil omi, omi nabil"
+                }, {
+                    name: "twitter:card",
+                    content: ImageCard.src
                 }]}
             />
         </>
