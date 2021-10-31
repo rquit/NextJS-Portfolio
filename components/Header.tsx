@@ -15,11 +15,11 @@ const Header = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.listContainer}>
-                {LangArray && LangArray.map(lang => <IconSVG headerIcon={lang} key={`${lang.src}`} />)}
+                {LangArray && LangArray.map(lang => <IconSVG headerIcon={lang} key={`${lang.name}`} />)}
             </ul>
             <hr className={styles.underline} />
             <ul className={styles.listContainer}>
-                {TechArray && TechArray.map(tech => <IconSVG headerIcon={tech} key={`${tech.src}`} />)}
+                {TechArray && TechArray.map(tech => <IconSVG headerIcon={tech} key={`${tech.name}`} />)}
             </ul>
             <hr className={styles.underline} />
         </div>
@@ -31,7 +31,6 @@ type HeaderIconProps = {
 }
 
 const IconSVG = ({ headerIcon }: HeaderIconProps) => {
-    const [tapped, setTapped] = useState(true);
     const {
         src,
         name
@@ -43,7 +42,7 @@ const IconSVG = ({ headerIcon }: HeaderIconProps) => {
             dragTransition={{ bounceStiffness: 100 }}
             className={styles.list}>
                 <AnimatePresence>
-                    {tapped &&
+                    {true &&
                     <motion.div 
                         className={styles.tooltip}
                         initial={{ opacity: 0 }}
