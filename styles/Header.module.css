@@ -24,9 +24,11 @@
     margin: 0.2rem;
     list-style: none;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     /* Styling */
-    cursor: grab;
 }
 
 .underline {
@@ -41,6 +43,20 @@
 
 .color {
     filter: invert(98%) sepia(40%) saturate(6587%) hue-rotate(314deg) brightness(112%) contrast(94%);
+}
+
+.tooltip {
+    position: absolute;
+    z-index: 10;
+    top: -3rem;
+    width: 6rem;
+    border: 2px solid #e6e6e6;
+    padding: .5rem;
+    background-color: #323232;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+    pointer-events: none;
 }
 
 @media (min-width: 700px) {
