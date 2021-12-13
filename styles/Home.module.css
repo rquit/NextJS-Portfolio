@@ -3,6 +3,8 @@
 .container {
   /* Size and Color */
   min-height: 100vh;
+  left: 0;
+  right: 0;
   background-color: rgb(35, 35, 35);
   color: #e6e6e6;
 
