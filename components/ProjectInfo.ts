@@ -50,7 +50,7 @@ const slackbot: Project = {
     desc: "RTC bot used for managing appointments.",
     longDesc: "RTC Slack bot made using the Slack API and Spurwing \
             API in NodeJS. Created during my internship at Spurwing.",
-    link: "https://github.com/rquit/Chat-Bot-Integrations"
+    link: "https://github.com/rquit/Chat-Bots"
 }
 
 const thissite: Project = {
