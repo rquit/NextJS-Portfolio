@@ -31,8 +31,7 @@ const awoogadex: Project = {
     desc: "Website to browse manga with MangaDex API.",
     longDesc: "Website for browsing manga and webcomics made using \
             ReactJS and Axios for requests. Consumes the MangaDex API.",
-    link: "https://github.com/rquit/AwoogaDex",
-    deployed: "https://manga.nabilto.com/"
+    link: "https://github.com/rquit/AwoogaDex"
 }
 
 const cifar10: Project = {
