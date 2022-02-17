@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { useState } from 'react'
 import styles from '../styles/Main.module.css'
 import Image from 'next/image'
 import type { Project, ProjectProp } from './ProjectInfo'
@@ -7,7 +6,7 @@ import {
     awoogadex,
     cifar10,
     slackbot,
-    thissite
+    carprices
 } from './ProjectInfo'
 
 const Main = () => {
@@ -15,7 +14,7 @@ const Main = () => {
         awoogadex, 
         cifar10, 
         slackbot, 
-        thissite
+        carprices
     ]
     return (
         <div className={styles.container}>
@@ -44,7 +43,7 @@ const ProjectDiv = ({ project }: ProjectProp) => {
             whileTap={{ scale: 1.02 }}
             className={styles.list}
         > 
-            <Image src={src} width={800} height={420} />
+            <Image alt={title} src={src} width={800} height={420} />
             <hr className={styles.hr} />
             <div className={styles.infoContainer}>
                 <div>
