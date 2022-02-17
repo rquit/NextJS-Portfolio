@@ -2,6 +2,7 @@ import ThisSite from '../public/img/image_card.png'
 import Cifar from '../public/img/Cifar.png'
 import Manga from '../public/img/Manga.png'
 import Spurwing from '../public/img/Spurwing.png'
+import CarPrices from '../public/img/CarPrices.png'
 
 export type Project = {
     src: string,
@@ -63,10 +64,19 @@ const thissite: Project = {
     deployed: "https://www.nabilto.com/"
 }
 
+const carprices: Project = {
+    src: CarPrices.src,
+    title: "Predict Used Car Prices",
+    desc: "XGBoost, Sklearn Parameter Grid Search.",
+    longDesc: "",
+    link: "https://www.kaggle.com/nabilomi/xgb-car-prices/"
+}
+
 export {
     sample,
     slackbot,
     thissite,
     awoogadex,
+    carprices,
     cifar10
 };
