@@ -5,15 +5,15 @@ import type { Project, ProjectProp } from './ProjectInfo'
 import {
     awoogadex,
     cifar10,
-    slackbot,
-    carprices
+    carprices,
+    cppserver
 } from './ProjectInfo'
 
 const Main = () => {
     const projects: Project[] = [
         awoogadex, 
         cifar10, 
-        slackbot, 
+        cppserver,
         carprices
     ]
     return (

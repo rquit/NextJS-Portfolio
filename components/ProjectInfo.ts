@@ -3,6 +3,7 @@ import Cifar from '../public/img/Cifar.png'
 import Manga from '../public/img/Manga.png'
 import Spurwing from '../public/img/Spurwing.png'
 import CarPrices from '../public/img/CarPrices.png'
+import CppServer from '../public/img/CppWebServer.png'
 
 export type Project = {
     src: string,
@@ -71,11 +72,20 @@ const carprices: Project = {
     link: "https://www.kaggle.com/nabilomi/xgb-car-prices/"
 }
 
+const cppserver: Project = {
+    src: CppServer.src,
+    title: "C++ Webserver",
+    desc: "C++ webserver library made with mainly sys/socket.h",
+    longDesc: "",
+    link: "https://github.com/rquit/Webserver_From_Scratch"
+}
+
 export {
     sample,
     slackbot,
     thissite,
     awoogadex,
     carprices,
+    cppserver,
     cifar10
 };
