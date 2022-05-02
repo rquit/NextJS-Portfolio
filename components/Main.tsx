@@ -5,7 +5,7 @@ import type { Project, ProjectProp } from './ProjectInfo'
 import {
     awoogadex,
     cifar10,
-    carprices,
+    faceswap,
     cppserver
 } from './ProjectInfo'
 
@@ -14,7 +14,7 @@ const Main = () => {
         awoogadex, 
         cifar10, 
         cppserver,
-        carprices
+        faceswap
     ]
     return (
         <div className={styles.container}>

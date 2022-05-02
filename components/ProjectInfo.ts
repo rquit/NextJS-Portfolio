@@ -4,6 +4,7 @@ import Manga from '../public/img/Manga.png'
 import Spurwing from '../public/img/Spurwing.png'
 import CarPrices from '../public/img/CarPrices.png'
 import CppServer from '../public/img/CppWebServer.png'
+import FaceMesh from '../public/img/FaceMesh.png'
 
 export type Project = {
     src: string,
@@ -80,6 +81,14 @@ const cppserver: Project = {
     link: "https://github.com/rquit/Webserver_From_Scratch"
 }
 
+const faceswap: Project = {
+    src: FaceMesh.src,
+    title: "Face Mesh Face Swap",
+    desc: "Fit a face mesh from 2d images to your face!",
+    longDesc: "",
+    link: "https://github.com/rquit/landmarks_face_swap"
+}
+
 export {
     sample,
     slackbot,
@@ -87,5 +96,6 @@ export {
     awoogadex,
     carprices,
     cppserver,
-    cifar10
+    cifar10,
+    faceswap
 };
