@@ -11,10 +11,10 @@ import {
 
 const Projects = () => {
     const projects: Project[] = [
-        awoogadex, 
-        cifar10, 
+        faceswap,
         cppserver,
-        faceswap
+        cifar10,
+        awoogadex
     ]
     return (
         <div className={styles.container}>
