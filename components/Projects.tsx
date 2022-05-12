@@ -9,7 +9,7 @@ import {
     cppserver
 } from './ProjectInfo'
 
-const Main = () => {
+const Projects = () => {
     const projects: Project[] = [
         awoogadex, 
         cifar10, 
@@ -66,4 +66,4 @@ const ProjectDiv = ({ project }: ProjectProp) => {
     )
 }
 
-export default Main;
+export default Projects;

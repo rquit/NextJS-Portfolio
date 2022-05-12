@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Meta from '../components/Meta'
-import Main from '../components/Main'
+import Projects from '../components/Projects'
 import styles from '../styles/Home.module.css'
 
 // COLOR BANK:
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <Meta />
       <Navbar />
       <Header />
-      <Main />
+      <Projects />
     </div>
   )
 }
